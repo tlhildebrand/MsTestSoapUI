@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="LicenseService" resourceRoot="" soapui-version="4.6.4" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="BasicHttpBinding_ILicenseService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_ILicenseService" soapVersion="1_1" anonymous="optional" definition="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?wsdl"><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="LicenseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:i0="http://ns.studystore.com/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:import namespace="http://ns.studystore.com/" location="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?wsdl=wsdl0"/>
+  <wsdl:types/>
+  <wsdl:binding name="BasicHttpBinding_ILicenseService" type="i0:ILicenseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CreateEbfClaim">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/CreateEbfClaim" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateIbfClaim">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/CreateIbfClaim" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CorrectEbfClaim">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/CorrectEbfClaim" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CorrectIbfClaim">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/CorrectIbfClaim" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="HasValidLicense">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/HasValidLicense" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseStatus">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetLicenseStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/ActivateLicense" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SetEduAppLicenseInUse">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerPeopleIdsThatHaveLicenseClaim">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaim" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDefinitionById">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionById" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseClaims">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetLicenseClaims" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/UpdateLicense" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishers">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetPublishers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDefinitions">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetLicenseDefinitions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetUsers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchools">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetSchools" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivationCodes">
+      <soap:operation soapAction="http://ns.studystore.com/ILicenseService/GetActivationCodes" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="LicensingErrorFault">
+        <soap:fault name="LicensingErrorFault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LicenseService">
+    <wsdl:port name="BasicHttpBinding_ILicenseService" binding="tns:BasicHttpBinding_ILicenseService">
+      <soap:address location="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?wsdl=wsdl0</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://ns.studystore.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ns.studystore.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ns.studystore.com/Imports">
+      <xsd:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd0" namespace="http://ns.studystore.com/"/>
+      <xsd:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      <xsd:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      <xsd:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILicenseService_CreateEbfClaim_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEbfClaim"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CreateEbfClaim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEbfClaimResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CreateEbfClaim_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CreateIbfClaim_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIbfClaim"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CreateIbfClaim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIbfClaimResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CreateIbfClaim_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectEbfClaim_InputMessage">
+    <wsdl:part name="parameters" element="tns:CorrectEbfClaim"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectEbfClaim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CorrectEbfClaimResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectEbfClaim_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectIbfClaim_InputMessage">
+    <wsdl:part name="parameters" element="tns:CorrectIbfClaim"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectIbfClaim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CorrectIbfClaimResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_CorrectIbfClaim_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_HasValidLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:HasValidLicense"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_HasValidLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HasValidLicenseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_HasValidLicense_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseStatus"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseStatusResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseStatus_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ActivateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLicense"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ActivateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLicenseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_ActivateLicense_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SetEduAppLicenseInUse_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetEduAppLicenseInUse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SetEduAppLicenseInUse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetEduAppLicenseInUseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_SetEduAppLicenseInUse_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerPeopleIdsThatHaveLicenseClaim"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerPeopleIdsThatHaveLicenseClaimResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitionById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDefinitionById"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitionById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDefinitionByIdResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitionById_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseClaims_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseClaims"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseClaims_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseClaimsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseClaims_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicense_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicense"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicense_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLicenseResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_UpdateLicense_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetPublishers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishers"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetPublishers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublishersResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetPublishers_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDefinitions"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLicenseDefinitionsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetLicenseDefinitions_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsers"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetUsers_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetSchools_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchools"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetSchools_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchoolsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetSchools_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetActivationCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivationCodes"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetActivationCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivationCodesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ILicenseService_GetActivationCodes_LicensingErrorFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:LicensingError"/>
+  </wsdl:message>
+  <wsdl:portType name="ILicenseService">
+    <wsdl:operation name="CreateEbfClaim">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/CreateEbfClaim" message="tns:ILicenseService_CreateEbfClaim_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/CreateEbfClaimResponse" message="tns:ILicenseService_CreateEbfClaim_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/CreateEbfClaimLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_CreateEbfClaim_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CreateIbfClaim">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/CreateIbfClaim" message="tns:ILicenseService_CreateIbfClaim_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/CreateIbfClaimResponse" message="tns:ILicenseService_CreateIbfClaim_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/CreateIbfClaimLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_CreateIbfClaim_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CorrectEbfClaim">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectEbfClaim" message="tns:ILicenseService_CorrectEbfClaim_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectEbfClaimResponse" message="tns:ILicenseService_CorrectEbfClaim_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectEbfClaimLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_CorrectEbfClaim_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="CorrectIbfClaim">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectIbfClaim" message="tns:ILicenseService_CorrectIbfClaim_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectIbfClaimResponse" message="tns:ILicenseService_CorrectIbfClaim_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/CorrectIbfClaimLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_CorrectIbfClaim_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="HasValidLicense">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/HasValidLicense" message="tns:ILicenseService_HasValidLicense_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/HasValidLicenseResponse" message="tns:ILicenseService_HasValidLicense_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/HasValidLicenseLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_HasValidLicense_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseStatus">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseStatus" message="tns:ILicenseService_GetLicenseStatus_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseStatusResponse" message="tns:ILicenseService_GetLicenseStatus_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseStatusLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetLicenseStatus_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLicense">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/ActivateLicense" message="tns:ILicenseService_ActivateLicense_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/ActivateLicenseResponse" message="tns:ILicenseService_ActivateLicense_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/ActivateLicenseLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_ActivateLicense_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="SetEduAppLicenseInUse">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUse" message="tns:ILicenseService_SetEduAppLicenseInUse_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUseResponse" message="tns:ILicenseService_SetEduAppLicenseInUse_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUseLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_SetEduAppLicenseInUse_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerPeopleIdsThatHaveLicenseClaim">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaim" message="tns:ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaimResponse" message="tns:ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaimLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetConsumerPeopleIdsThatHaveLicenseClaim_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDefinitionById">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionById" message="tns:ILicenseService_GetLicenseDefinitionById_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionByIdResponse" message="tns:ILicenseService_GetLicenseDefinitionById_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionByIdLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetLicenseDefinitionById_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseClaims">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseClaims" message="tns:ILicenseService_GetLicenseClaims_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseClaimsResponse" message="tns:ILicenseService_GetLicenseClaims_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseClaimsLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetLicenseClaims_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/UpdateLicense" message="tns:ILicenseService_UpdateLicense_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/UpdateLicenseResponse" message="tns:ILicenseService_UpdateLicense_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/UpdateLicenseLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_UpdateLicense_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublishers">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetPublishers" message="tns:ILicenseService_GetPublishers_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetPublishersResponse" message="tns:ILicenseService_GetPublishers_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetPublishersLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetPublishers_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDefinitions">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitions" message="tns:ILicenseService_GetLicenseDefinitions_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionsResponse" message="tns:ILicenseService_GetLicenseDefinitions_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionsLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetLicenseDefinitions_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsers">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetUsers" message="tns:ILicenseService_GetUsers_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetUsersResponse" message="tns:ILicenseService_GetUsers_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetUsersLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetUsers_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchools">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetSchools" message="tns:ILicenseService_GetSchools_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetSchoolsResponse" message="tns:ILicenseService_GetSchools_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetSchoolsLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetSchools_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivationCodes">
+      <wsdl:input wsaw:Action="http://ns.studystore.com/ILicenseService/GetActivationCodes" message="tns:ILicenseService_GetActivationCodes_InputMessage"/>
+      <wsdl:output wsaw:Action="http://ns.studystore.com/ILicenseService/GetActivationCodesResponse" message="tns:ILicenseService_GetActivationCodes_OutputMessage"/>
+      <wsdl:fault wsaw:Action="http://ns.studystore.com/ILicenseService/GetActivationCodesLicensingErrorFault" name="LicensingErrorFault" message="tns:ILicenseService_GetActivationCodes_LicensingErrorFault_FaultMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://ns.studystore.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ns.studystore.com/">
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  <xs:element name="CreateEbfClaim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="distributorOrganizationId" type="q1:guid" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="ean" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime"/>
+        <xs:element minOccurs="0" name="distributorCreditId" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="consumerPeopleId" type="q2:guid" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="schoolOrganizationId" type="q3:guid" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateEbfClaimResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateEbfClaimResult" nillable="true" type="q4:LicenseClaim" xmlns:q4="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="LicensingError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errorcode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LicensingError" nillable="true" type="tns:LicensingError"/>
+  <xs:element name="CreateIbfClaim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="distributorOrganizationId" type="q5:guid" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="ean" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="startDate" type="xs:dateTime"/>
+        <xs:element minOccurs="0" name="distributorCreditId" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="schoolOrganizationId" type="q6:guid" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="contactName" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="contactEmail" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="amount" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateIbfClaimResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateIbfClaimResult" nillable="true" type="q7:LicenseClaim" xmlns:q7="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectEbfClaim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="distributorOrganizationId" type="q8:guid" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="distributorCreditId" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectEbfClaimResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CorrectEbfClaimResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectIbfClaim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="distributorOrganizationId" type="q9:guid" xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="distributorCreditId" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="amount" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectIbfClaimResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CorrectIbfClaimResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasValidLicense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="consumerPeopleId" type="q10:guid" xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="ean" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HasValidLicenseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HasValidLicenseResult" nillable="true" type="q11:HasValidLicenseResult" xmlns:q11="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="licenseClaimId" type="q12:guid" xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLicenseStatusResult" type="q13:LicenseStatusResult" xmlns:q13="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateLicense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="consumerPeopleId" type="q14:guid" xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="schoolOrganizationId" nillable="true" type="q15:guid" xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="ean" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="activationCode" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateLicenseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivateLicenseResult" nillable="true" type="q16:ActivateLicenseResult" xmlns:q16="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetEduAppLicenseInUse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="consumerPeopleId" type="q17:guid" xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="coreReferences" nillable="true" type="q18:ArrayOfstring" xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetEduAppLicenseInUseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetEduAppLicenseInUseResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConsumerPeopleIdsThatHaveLicenseClaim">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="consumerPeopleIdsToCheck" nillable="true" type="q19:ArrayOfguid" xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+        <xs:element minOccurs="0" name="ean" nillable="true" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConsumerPeopleIdsThatHaveLicenseClaimResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConsumerPeopleIdsThatHaveLicenseClaimResult" nillable="true" type="q20:ArrayOfguid" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseDefinitionById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="brand" nillable="true" type="xs:string"/>
+        <xs:element minOccurs="0" name="licenseDefinitionId" type="q21:guid" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseDefinitionByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLicenseDefinitionByIdResult" nillable="true" type="q22:LicenseDefinition" xmlns:q22="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseClaims">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q23:LicenseQueryRequest" xmlns:q23="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseClaimsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLicenseClaimsResult" nillable="true" type="q24:ArrayOfLicenseClaim" xmlns:q24="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLicense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="licenseId" type="q25:guid" xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/"/>
+        <xs:element minOccurs="0" name="endLicense" type="xs:dateTime"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLicenseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateLicenseResult" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublishers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q26:PublishersQueryRequest" xmlns:q26="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublishersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPublishersResult" nillable="true" type="q27:ArrayOfOrganization" xmlns:q27="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseDefinitions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q28:LicenseDefinitionQueryRequest" xmlns:q28="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLicenseDefinitionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLicenseDefinitionsResult" nillable="true" type="q29:ArrayOfLicenseDefinition" xmlns:q29="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q30:UsersQueryRequest" xmlns:q30="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUsersResult" nillable="true" type="q31:ArrayOfUser" xmlns:q31="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchools">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q32:SchoolsQueryRequest" xmlns:q32="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSchoolsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSchoolsResult" nillable="true" type="q33:ArrayOfOrganization" xmlns:q33="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivationCodes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="q34:ActivationCodesRequest" xmlns:q34="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivationCodesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetActivationCodesResult" nillable="true" type="q35:ArrayOfstring" xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:complexType name="LicenseClaim">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivateUntil" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="ActivationCode" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ActivationDate" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="ConsumerPeopleId" nillable="true" type="ser:guid"/>
+      <xs:element minOccurs="0" name="ContactEmail" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ContactName" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ContentUrl" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid"/>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="CurrentValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="DeactivationDate" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="DistributorOrderRef" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="DistributorOrganizationId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="EndLicense" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Id" type="ser:guid"/>
+      <xs:element minOccurs="0" name="IsEduApp" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="IsServiceCredit" nillable="true" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LicenseDefinition" nillable="true" type="tns:LicenseDefinition"/>
+      <xs:element minOccurs="0" name="LicenseDefinitionId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="LicenseType" nillable="true" type="tns:LicenseType"/>
+      <xs:element minOccurs="0" name="LicenseTypeId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="MaxValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="MinValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="ser:guid"/>
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="SchoolOrganizationId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="Shipments" nillable="true" type="tns:TrackableCollectionOfLicenseClaimShipmentSvZisBVv"/>
+      <xs:element minOccurs="0" name="StartLicense" nillable="true" type="xs:dateTime"/>
+    </xs:sequence>
+    <xs:attribute ref="ser:Id"/>
+    <xs:attribute ref="ser:Ref"/>
+  </xs:complexType>
+  <xs:element name="LicenseClaim" nillable="true" type="tns:LicenseClaim"/>
+  <xs:complexType name="LicenseDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivateUntil" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Brand" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CanCreateServiceCredit" nillable="true" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="ContentUrl" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid"/>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Ean" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="EndLicense" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Id" type="ser:guid"/>
+      <xs:element minOccurs="0" name="IsEduApp" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LicenseType" nillable="true" type="tns:LicenseType"/>
+      <xs:element minOccurs="0" name="LicenseTypeId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="MaxValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="MinValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="ser:guid"/>
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Parent" nillable="true" type="tns:TrackableCollectionOfLicenseDefinitionSvZisBVv"/>
+      <xs:element minOccurs="0" name="ParentId" nillable="true" type="ser:guid"/>
+      <xs:element minOccurs="0" name="PublisherId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="StartLicense" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="ThingSourceId" type="ser:guid"/>
+    </xs:sequence>
+    <xs:attribute ref="ser:Id"/>
+    <xs:attribute ref="ser:Ref"/>
+  </xs:complexType>
+  <xs:element name="LicenseDefinition" nillable="true" type="tns:LicenseDefinition"/>
+  <xs:complexType name="LicenseType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" type="ser:guid"/>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Id" type="ser:guid"/>
+      <xs:element minOccurs="0" name="InitialValue" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="LogicClrType" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="ser:guid"/>
+      <xs:element minOccurs="0" name="ModifiedDate" nillable="true" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute ref="ser:Id"/>
+    <xs:attribute ref="ser:Ref"/>
+  </xs:complexType>
+  <xs:element name="LicenseType" nillable="true" type="tns:LicenseType"/>
+  <xs:complexType name="TrackableCollectionOfLicenseDefinitionSvZisBVv">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackableCollectionOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LicenseDefinition" Namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseDefinition" nillable="true" type="tns:LicenseDefinition"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrackableCollectionOfLicenseDefinitionSvZisBVv" nillable="true" type="tns:TrackableCollectionOfLicenseDefinitionSvZisBVv"/>
+  <xs:complexType name="TrackableCollectionOfLicenseClaimShipmentSvZisBVv">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackableCollectionOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LicenseClaimShipment" Namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseClaimShipment" nillable="true" type="tns:LicenseClaimShipment"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TrackableCollectionOfLicenseClaimShipmentSvZisBVv" nillable="true" type="tns:TrackableCollectionOfLicenseClaimShipmentSvZisBVv"/>
+  <xs:complexType name="LicenseClaimShipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LicenseClaim" nillable="true" type="tns:LicenseClaim"/>
+      <xs:element minOccurs="0" name="LicenseClaimId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="LicenseDefinitionId" type="ser:guid"/>
+      <xs:element minOccurs="0" name="ShipmentId" type="ser:guid"/>
+    </xs:sequence>
+    <xs:attribute ref="ser:Id"/>
+    <xs:attribute ref="ser:Ref"/>
+  </xs:complexType>
+  <xs:element name="LicenseClaimShipment" nillable="true" type="tns:LicenseClaimShipment"/>
+  <xs:complexType name="ArrayOfLicenseClaim">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseClaim" nillable="true" type="tns:LicenseClaim"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLicenseClaim" nillable="true" type="tns:ArrayOfLicenseClaim"/>
+  <xs:complexType name="ArrayOfLicenseDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LicenseDefinition" nillable="true" type="tns:LicenseDefinition"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLicenseDefinition" nillable="true" type="tns:ArrayOfLicenseDefinition"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:complexType name="HasValidLicenseResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsValid" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LicenseClaim" nillable="true" type="q1:LicenseClaim" xmlns:q1="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HasValidLicenseResult" nillable="true" type="tns:HasValidLicenseResult"/>
+  <xs:simpleType name="LicenseStatusResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotActivated"/>
+      <xs:enumeration value="Valid"/>
+      <xs:enumeration value="Invalid"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LicenseStatusResult" nillable="true" type="tns:LicenseStatusResult"/>
+  <xs:complexType name="ActivateLicenseResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsActivated" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="LicenseClaim" nillable="true" type="q2:LicenseClaim" xmlns:q2="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.Model"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActivateLicenseResult" nillable="true" type="tns:ActivateLicenseResult"/>
+  <xs:complexType name="LicenseQueryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActivationCode" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="LicenseClaimId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="LicenseDefinitionId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="SchoolId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseQueryRequest" nillable="true" type="tns:LicenseQueryRequest"/>
+  <xs:complexType name="QueryRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Skip" nillable="true" type="xs:int"/>
+      <xs:element minOccurs="0" name="Take" nillable="true" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QueryRequest" nillable="true" type="tns:QueryRequest"/>
+  <xs:complexType name="PublishersQueryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PublishersQueryRequest" nillable="true" type="tns:PublishersQueryRequest"/>
+  <xs:complexType name="ArrayOfOrganization">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Organization" nillable="true" type="tns:Organization"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrganization" nillable="true" type="tns:ArrayOfOrganization"/>
+  <xs:complexType name="Organization">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Organization" nillable="true" type="tns:Organization"/>
+  <xs:complexType name="LicenseDefinitionQueryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HavingLicenses" nillable="true" type="xs:boolean"/>
+          <xs:element minOccurs="0" name="LicenseDefinitionId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LicenseDefinitionQueryRequest" nillable="true" type="tns:LicenseDefinitionQueryRequest"/>
+  <xs:complexType name="UsersQueryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LicenseDefinitionId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="UserId" nillable="true" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UsersQueryRequest" nillable="true" type="tns:UsersQueryRequest"/>
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser"/>
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid"/>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User"/>
+  <xs:complexType name="SchoolsQueryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LicenseDefinitionId" nillable="true" type="ser:guid"/>
+          <xs:element minOccurs="0" name="PublisherId" nillable="true" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SchoolsQueryRequest" nillable="true" type="tns:SchoolsQueryRequest"/>
+  <xs:complexType name="ActivationCodesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:QueryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LicenseDefinitionId" type="ser:guid"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActivationCodesRequest" nillable="true" type="tns:ActivationCodesRequest"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd4</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:import schemaLocation="http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring"/>
+  <xs:complexType name="ArrayOfguid">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="guid" type="ser:guid"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfguid" nillable="true" type="tns:ArrayOfguid"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/ActivateLicense" name="ActivateLicense" bindingOperationName="ActivateLicense" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:ActivateLicense>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:consumerPeopleId>?</ns:consumerPeopleId>
+         <!--Optional:-->
+         <ns:schoolOrganizationId>?</ns:schoolOrganizationId>
+         <!--Optional:-->
+         <ns:ean>?</ns:ean>
+         <!--Optional:-->
+         <ns:activationCode>?</ns:activationCode>
+      </ns:ActivateLicense>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/ActivateLicense"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/CorrectEbfClaim" name="CorrectEbfClaim" bindingOperationName="CorrectEbfClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:CorrectEbfClaim>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:distributorOrganizationId>?</ns:distributorOrganizationId>
+         <!--Optional:-->
+         <ns:distributorCreditId>?</ns:distributorCreditId>
+      </ns:CorrectEbfClaim>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/CorrectEbfClaim"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/CorrectIbfClaim" name="CorrectIbfClaim" bindingOperationName="CorrectIbfClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:CorrectIbfClaim>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:distributorOrganizationId>?</ns:distributorOrganizationId>
+         <!--Optional:-->
+         <ns:distributorCreditId>?</ns:distributorCreditId>
+         <!--Optional:-->
+         <ns:amount>?</ns:amount>
+      </ns:CorrectIbfClaim>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/CorrectIbfClaim"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/CreateEbfClaim" name="CreateEbfClaim" bindingOperationName="CreateEbfClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:CreateEbfClaim>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:distributorOrganizationId>?</ns:distributorOrganizationId>
+         <!--Optional:-->
+         <ns:ean>?</ns:ean>
+         <!--Optional:-->
+         <ns:startDate>?</ns:startDate>
+         <!--Optional:-->
+         <ns:distributorCreditId>?</ns:distributorCreditId>
+         <!--Optional:-->
+         <ns:consumerPeopleId>?</ns:consumerPeopleId>
+         <!--Optional:-->
+         <ns:schoolOrganizationId>?</ns:schoolOrganizationId>
+      </ns:CreateEbfClaim>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/CreateEbfClaim"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/CreateIbfClaim" name="CreateIbfClaim" bindingOperationName="CreateIbfClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:CreateIbfClaim>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:distributorOrganizationId>?</ns:distributorOrganizationId>
+         <!--Optional:-->
+         <ns:ean>?</ns:ean>
+         <!--Optional:-->
+         <ns:startDate>?</ns:startDate>
+         <!--Optional:-->
+         <ns:distributorCreditId>?</ns:distributorCreditId>
+         <!--Optional:-->
+         <ns:schoolOrganizationId>?</ns:schoolOrganizationId>
+         <!--Optional:-->
+         <ns:contactName>?</ns:contactName>
+         <!--Optional:-->
+         <ns:contactEmail>?</ns:contactEmail>
+         <!--Optional:-->
+         <ns:amount>?</ns:amount>
+      </ns:CreateIbfClaim>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/CreateIbfClaim"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetActivationCodes" name="GetActivationCodes" bindingOperationName="GetActivationCodes" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetActivationCodes>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>?</itd:LicenseDefinitionId>
+         </ns:request>
+      </ns:GetActivationCodes>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetActivationCodes"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaim" name="GetConsumerPeopleIdsThatHaveLicenseClaim" bindingOperationName="GetConsumerPeopleIdsThatHaveLicenseClaim" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetConsumerPeopleIdsThatHaveLicenseClaim>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:consumerPeopleIdsToCheck>
+            <!--Zero or more repetitions:-->
+            <arr:guid>?</arr:guid>
+         </ns:consumerPeopleIdsToCheck>
+         <!--Optional:-->
+         <ns:ean>?</ns:ean>
+      </ns:GetConsumerPeopleIdsThatHaveLicenseClaim>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetConsumerPeopleIdsThatHaveLicenseClaim"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetLicenseClaims" name="GetLicenseClaims" bindingOperationName="GetLicenseClaims" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetLicenseClaims>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:ActivationCode>?</itd:ActivationCode>
+            <!--Optional:-->
+            <itd:LicenseClaimId>?</itd:LicenseClaimId>
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>?</itd:LicenseDefinitionId>
+            <!--Optional:-->
+            <itd:PublisherId>?</itd:PublisherId>
+            <!--Optional:-->
+            <itd:SchoolId>?</itd:SchoolId>
+            <!--Optional:-->
+            <itd:UserId>?</itd:UserId>
+         </ns:request>
+      </ns:GetLicenseClaims>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetLicenseClaims"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionById" name="GetLicenseDefinitionById" bindingOperationName="GetLicenseDefinitionById" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetLicenseDefinitionById>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:licenseDefinitionId>?</ns:licenseDefinitionId>
+      </ns:GetLicenseDefinitionById>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitionById"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitions" name="GetLicenseDefinitions" bindingOperationName="GetLicenseDefinitions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetLicenseDefinitions>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:HavingLicenses>?</itd:HavingLicenses>
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>?</itd:LicenseDefinitionId>
+            <!--Optional:-->
+            <itd:PublisherId>?</itd:PublisherId>
+         </ns:request>
+      </ns:GetLicenseDefinitions>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetLicenseDefinitions"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetLicenseStatus" name="GetLicenseStatus" bindingOperationName="GetLicenseStatus" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetLicenseStatus>
+         <!--Optional:-->
+         <ns:licenseClaimId>?</ns:licenseClaimId>
+      </ns:GetLicenseStatus>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetLicenseStatus"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetPublishers" name="GetPublishers" bindingOperationName="GetPublishers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetPublishers>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:PublisherId>?</itd:PublisherId>
+         </ns:request>
+      </ns:GetPublishers>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetPublishers"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetSchools" name="GetSchools" bindingOperationName="GetSchools" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetSchools>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>?</itd:LicenseDefinitionId>
+            <!--Optional:-->
+            <itd:PublisherId>?</itd:PublisherId>
+         </ns:request>
+      </ns:GetSchools>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetSchools"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/GetUsers" name="GetUsers" bindingOperationName="GetUsers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetUsers>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <itd:Skip>?</itd:Skip>
+            <!--Optional:-->
+            <itd:Take>?</itd:Take>
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>?</itd:LicenseDefinitionId>
+            <!--Optional:-->
+            <itd:PublisherId>?</itd:PublisherId>
+            <!--Optional:-->
+            <itd:UserId>?</itd:UserId>
+         </ns:request>
+      </ns:GetUsers>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/GetUsers"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/HasValidLicense" name="HasValidLicense" bindingOperationName="HasValidLicense" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:HasValidLicense>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:consumerPeopleId>?</ns:consumerPeopleId>
+         <!--Optional:-->
+         <ns:ean>?</ns:ean>
+      </ns:HasValidLicense>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/HasValidLicense"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUse" name="SetEduAppLicenseInUse" bindingOperationName="SetEduAppLicenseInUse" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:SetEduAppLicenseInUse>
+         <!--Optional:-->
+         <ns:brand>?</ns:brand>
+         <!--Optional:-->
+         <ns:consumerPeopleId>?</ns:consumerPeopleId>
+         <!--Optional:-->
+         <ns:coreReferences>
+            <!--Zero or more repetitions:-->
+            <arr:string>?</arr:string>
+         </ns:coreReferences>
+      </ns:SetEduAppLicenseInUse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/SetEduAppLicenseInUse"/></con:call></con:operation><con:operation isOneWay="false" action="http://ns.studystore.com/ILicenseService/UpdateLicense" name="UpdateLicense" bindingOperationName="UpdateLicense" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:UpdateLicense>
+         <!--Optional:-->
+         <ns:licenseId>?</ns:licenseId>
+         <!--Optional:-->
+         <ns:endLicense>?</ns:endLicense>
+      </ns:UpdateLicense>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://ns.studystore.com/ILicenseService/UpdateLicense"/></con:call></con:operation></con:interface><con:testSuite name="BasicHttpBinding_ILicenseService TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetActivationCodes TestCase" searchProperties="true"><con:settings/><con:testStep type="request" name="GetActivationCodes"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BasicHttpBinding_ILicenseService</con:interface><con:operation>GetActivationCodes</con:operation><con:request name="GetActivationCodes"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://core.transaction.licensing.apptest.vdcl.net/LicenseService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://ns.studystore.com/" xmlns:itd="http://schemas.datacontract.org/2004/07/ITDepartment.Core.Transaction.Licensing.Contracts.ServiceContracts">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:GetActivationCodes>
+         <!--Optional:-->
+         <ns:request>
+            <!--Optional:-->
+            <!--Optional:-->
+            <itd:LicenseDefinitionId>7485A8BE-3105-4CE7-BD61-30AAF35A6A09</itd:LicenseDefinitionId>
+         </ns:request>
+      </ns:GetActivationCodes>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>311</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://ns.studystore.com/ILicenseService/GetActivationCodes" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>
