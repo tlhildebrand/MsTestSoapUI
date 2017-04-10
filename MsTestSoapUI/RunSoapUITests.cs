@@ -42,7 +42,7 @@ namespace MsTestSoapUI
             var soapHome = System.Configuration.ConfigurationManager.AppSettings["SoapUIHome"];
 
             //Start a process and hook up the in/output
-            var proces = new Process
+            var process = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
@@ -55,15 +55,16 @@ namespace MsTestSoapUI
                     RedirectStandardOutput = true,
                     UseShellExecute = false
                 },
+
                 EnableRaisingEvents = true
             };
 
             //Pipe the output to Console.WriteLine
-            proces.OutputDataReceived += (sender, args) => Console.WriteLine(args.Data);
+            process.OutputDataReceived += (sender, args) => Console.WriteLine(args.Data);
 
             //Store the errors in a stringbuilder
             var errorBuilder = new StringBuilder();
-            proces.ErrorDataReceived += (sender, args) =>
+            process.ErrorDataReceived += (sender, args) =>
             {
                 if (args != null && args.Data != null)
                 {
@@ -71,12 +72,12 @@ namespace MsTestSoapUI
                 }
             };
 
-            proces.Start();
-            proces.BeginOutputReadLine();
-            proces.BeginErrorReadLine();
+            process.Start();
+            process.BeginOutputReadLine();
+            process.BeginErrorReadLine();
 
             //Wait for SoapUI to finish
-            proces.WaitForExit();
+            process.WaitForExit();
 
             //Fail the test if anything fails
             var errorMessage = errorBuilder.ToString();

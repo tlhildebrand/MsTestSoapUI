@@ -6,3 +6,11 @@ C:\Users\thildebrand\Documents\SoapUI NG\UnitTests\MsTestSoapUI\MsTestSoapUI\bin
 C:\Users\thildebrand\Documents\SoapUI NG\UnitTests\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.csprojResolveAssemblyReference.cache
 C:\Users\thildebrand\Documents\SoapUI NG\UnitTests\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.dll
 C:\Users\thildebrand\Documents\SoapUI NG\UnitTests\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.pdb
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\bin\Debug\test-service.xml
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\bin\Debug\MsTestSoapUI.dll.config
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\bin\Debug\MsTestSoapUI.dll
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\bin\Debug\MsTestSoapUI.pdb
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.csprojResolveAssemblyReference.cache
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.dll
+C:\Users\thildebrand\Documents\GitHub\MsTestSoapUI\MsTestSoapUI\obj\Debug\MsTestSoapUI.pdb
